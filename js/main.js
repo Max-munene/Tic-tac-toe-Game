@@ -32,3 +32,16 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
+
+const sr = ScrollReveal({
+	origin: 'bottom',
+	distance: '60px',
+	duration: 2000,
+	reset: true,
+});
+
+sr.reveal('.header_container', {});
+sr.reveal('.title', { delay: 200 });
+sr.reveal('.left', { delay: 400 });
+sr.reveal('.game', { delay: 200 });
+sr.reveal('.board-tile', { interval: 200 });
